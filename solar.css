@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar ul {
+    margin: -5px;
+    padding: 0;
+    list-style-type: none;
+    overflow: visible;
+    width: 17%;
+    height: 850px;
+    float: left;
+    font-family: 'Gochi Hand';
+    font-size: 32px;
+    display: block;
+    text-align: center;
+    background: linear-gradient(to right,rgb(135, 9, 219),rgb(60, 6, 97));
+}
+.navbar ul li {
+    padding: 10px 16px;
+    transition: .5s;
+    text-align: center;
+}
+
+.navbar  ul li:hover {
+    transform: scale(2,2);
+    border: 1px solid white;
+    border-bottom: none;
+    border-top: none;
+    background-color: purple;
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar ul {float: none; width: 100%;}
+    .navbar ul  li {width: 100%; display: block;}
+    .solar {width: 200%; float: none; display: block;}
+}
+
+/*Solar System*/
+.solar {
+    overflow: hidden;
+    margin: 0;
+    float: left;
+    width: 83%;
+    height: 850px;
+    background-color: #000;
+    position: relative;
+}
+/*Sun*/
+.solar .sun {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background: url('sun.jpg') no-repeat center;
+    background-size: contain;
+    border-radius: 50%;
+    top: 350px;
+    left: 500px;
+    transform: translate(-50%,-50%);
+}
+
+/*Orbit building*/
+.solar .mo {
+    position: absolute;
+    top: 275px;
+    left: 400px;
+    width: 200px;
+    height: 150px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.solar .vo {
+    position: absolute;
+    top: 224px;
+    left: 350px;
+    width: 300px;
+    height: 250px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.solar .eo {
+    position: absolute;
+    top: 175px;
+    left: 300px;
+    width: 400px;
+    height: 350px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.solar .mro {
+    position: absolute;
+    top: 130px;
+    left: 250px;
+    width: 500px;
+    height: 450px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.solar .jo {
+    position: absolute;
+    top: 55px;
+    left: 175px;
+    width: 650px;
+    height: 600px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.solar .so {
+    position: absolute;
+    top: 10px;
+    left: 125px;
+    width: 750px;
+    height: 700px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.solar .uo {
+    position: absolute;
+    top:-30px;
+    left: 80px;
+    width: 850px;
+    height: 800px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.solar .no {
+    position: absolute;
+    top:-75px;
+    left: 35px;
+    width: 950px;
+    height: 900px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+/*Planet building*/
+.mercury {
+    position: absolute;
+    top: 335px;
+    left: 390px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 25px;
+    background: url(mer.jpg) no-repeat center;
+    background-size: contain;
+}
+.venus {
+    position: absolute;
+    top: 335px;
+    left: 335px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 25px;
+    background: url(venus.jpg) no-repeat center;
+    background-size: contain;
+}
+.earth {
+    position: absolute;
+    top: 335px;
+    left: 280px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 25px;
+    background: url(earth.jpg) no-repeat center;
+    background-size: contain;
+}
+.mars {
+    position: absolute;
+    top: 335px;
+    left: 230px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 25px;
+    background: url(mars.jpg) no-repeat center;
+    background-size: contain;
+}
+.jupiter {
+    position: absolute;
+    top: 335px;
+    left: 135px;
+    width: 20px;
+    height: 130px;
+    overflow: visible;
+    height: 25px;
+}
+.saturn {
+    position: absolute;
+    top: 335px;
+    left: 100px;
+    width: 50px;
+    height: 75px;
+    overflow: hidden;
+}
+.uranus {
+    position: absolute;
+    top: 335px;
+    left: 60px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 25px;
+    background: url(uranus.jpg) no-repeat center;
+    background-size: contain;
+}
+.neptune {
+    position: absolute;
+    top: 335px;
+    left: 15px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 25px;
+    background: url(neptune.jpg) no-repeat center;
+    background-size: contain;
+}
+
